@@ -1,0 +1,44 @@
+<ion-content>
+
+  <div>
+    <div>
+    <ion-list>
+
+      <div class="a">
+
+<form [formGroup]="formCadastro">
+  <div>
+    <ion-label class="nome">Nome</ion-label>
+    <ion-input formControlName="nome" placeholder="Digite o nome do produto"></ion-input>
+  </div>
+
+  <div>
+    <ion-label class="desc">Descrição</ion-label>
+    <ion-input formControlName="descricao" placeholder="Digite a Descrição"></ion-input>
+  </div>
+
+  <div>
+    <ion-label class="validade">Validade</ion-label>
+    <ion-input formControlName="validade" placeholder="Digite a Validade"></ion-input>
+  </div>
+
+  <div>
+    <ion-label class="preco">Preço</ion-label>
+    <ion-input formControlName="preco" placeholder="Digite o preço"></ion-input>
+  </div>
+</form>
+
+
+      </div>
+
+    </ion-list>
+  </div>
+  </div>
+  <div class="bot" >
+    <ion-button  shape="round" color="dark" size="small" (click)="salvarCadastro()">Validar</ion-button>
+  </div>
+
+
+
+
+</ion-content>

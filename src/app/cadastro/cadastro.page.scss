@@ -1,0 +1,38 @@
+ion-content{
+  --ion-background-color:#0af7ff;
+}
+
+.titulo{
+  text-align: center;
+
+  h1{
+    font-weight: bold;
+  }
+}
+
+.bot{
+  text-align: center;
+
+ion-button {
+  color: #111010;
+  font-weight: bold;
+}
+
+
+}
+
+.a {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 245px;
+  font-weight: bold;
+
+  ion-label {
+  color: #111010;
+  font-weight: bold;
+}
+
+}

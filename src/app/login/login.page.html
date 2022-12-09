@@ -1,0 +1,43 @@
+<ion-content>
+
+  <div>
+    <div class="a">
+
+      <form [formGroup]="formLogin">
+        <div>
+          <ion-label class="email">Email</ion-label>
+          <ion-input formControlName="email" placeholder="Digite o seu Email"></ion-input>
+        </div>
+
+        <div>
+          <ion-label class="senha">Senha</ion-label>
+          <ion-input type="Password" placeholder="Senha do Usuário"></ion-input>
+        </div>
+
+      </form>
+      <p>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label> Lembrar Senha</ion-label>
+      </p>
+
+      <div>
+        <div class="bot" >
+          <ion-button  shape="round" color="dark" size="small" (click)="salvarLogin()">Entrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  routerLink="/registro" shape="round" size="small" color="dark">Registrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  shape="round" size="small" color="dark">Esqueceu Senha</ion-button>
+        </div>
+
+    </div>
+
+</div>
+
+
+  </div>
+
+  </ion-content>

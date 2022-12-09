@@ -1,0 +1,55 @@
+<ion-content>
+
+  <div>
+    <div class="a">
+
+      <form [formGroup]="formRegistro">
+        <div>
+          <ion-label class="nome">Nome</ion-label>
+          <ion-input placeholder="Digite o seu nome" formControlName="nome"></ion-input>
+        </div>
+
+        <div>
+          <ion-label class="cpf">CPF</ion-label>
+          <ion-input placeholder="Digite o seu CPF"></ion-input>
+        </div>
+
+        <div>
+          <ion-label class="email">Email</ion-label>
+          <ion-input formControlName="email" placeholder="Digite o seu Email"></ion-input>
+        </div>
+
+        <div>
+          <ion-label class="senha">Senha</ion-label>
+          <ion-input type="Password" placeholder="Senha do Usuário"></ion-input>
+        </div>
+
+        <div>
+          <ion-label class="csenha">Confirmar Senha</ion-label>
+          <ion-input type="Password" placeholder="Confirmar Senha do Usuário"></ion-input>
+        </div>
+
+      </form>
+    </div>
+      <div>
+        <div class="bot" >
+          <ion-button  shape="round" color="dark" size="small" (click)="salvarRegistro()">Validar</ion-button>
+        </div>
+
+      <div class="bot">
+        <div>
+          <ion-button  shape="round" color="dark" routerLink="/login" size="small">Voltar</ion-button>
+        </div>
+
+        <div>
+          <ion-button  routerLink="/cadastro" shape="round" size="small" color="dark">Cadastro</ion-button>
+        </div>
+
+    </div>
+
+</div>
+
+
+  </div>
+
+  </ion-content>
